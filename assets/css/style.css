@@ -93,6 +93,12 @@ main {
   margin-top: 20px;
 }
 
+.construction-img {
+  margin-top: 20px;
+  width: 45vw;
+  text-align: center;
+}
+
 :root {
   --black: #000000;
   --white: #ffffff;
