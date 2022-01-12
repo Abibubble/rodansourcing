@@ -8,10 +8,19 @@
   }
 
   &-item {
-    height: 275px;
-    border: 2px solid var(--black);
+    padding: 10px;
+    height: 250px;
     border-radius: 10px;
     background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      outline: 2px solid grey;
+      outline-offset: 0;
+    }
 
     &--green {
       background-color: green;
@@ -19,15 +28,19 @@
   }
 
   &-img {
-    width: 95%;
+    height: 80%;
     margin: 0 auto;
     border-radius: 20px;
-    padding: 10px;
+    padding-top: 8px;
   }
 
   @media screen and (min-width: 768px) {
     &-container {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-item {
+      height: 275px;
     }
   }
 }
